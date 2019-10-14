@@ -1,0 +1,9 @@
+bcrypt
+jsonwebtoken
+mysql
+mysql2
+sequelize
+sequelizecli
+yup (validacao)
+multer
+date-fns@next
