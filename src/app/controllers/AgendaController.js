@@ -15,7 +15,7 @@ class AgendaController{
 
         if (!checkUserProvider){
             res.status(401).json({ error: "Usuario nao é um provider"});
-        }
+        } 
 
         const {date} = req.query;
         const parsedDate = parseISO(date);
@@ -28,6 +28,11 @@ class AgendaController{
                     [Op.between] : [ startOfDay(parsedDate), endOfDay(parsedDate) ]
                 },
             },
+            include: [{
+                model: User,
+                as: 'user',
+                attributes: ['name']
+            }],
             order: ['date']
         })
 

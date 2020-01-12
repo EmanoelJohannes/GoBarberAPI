@@ -7,3 +7,10 @@ sequelizecli
 yup (validacao)
 multer
 date-fns@next
+nodemailer
+yarn add @sentry/node@5.7.1
+express-handlebars 
+nodemailer-express-handlebars
+express-async-errors
+youch (para melhor visualização dos erros)
+cors
